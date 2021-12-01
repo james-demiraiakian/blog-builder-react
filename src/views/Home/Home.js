@@ -10,8 +10,8 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [text, setText] = useState('');
-  const [font, setFont] = useState('');
-  const [align, setAlign] = useState('');
+  const [font, setFont] = useState('Roboto');
+  const [align, setAlign] = useState('left');
 
   return (
     <main>
