@@ -10,12 +10,13 @@ export default function Home() {
   const [title, setTitle] = useState('Title');
   const [subtitle, setSubtitle] = useState('Subtitle');
   const [text, setText] = useState('Text');
+  const [font, setFont] = useState('Roboto');
 
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
-      <Preview {...{ title, subtitle, text }} />
-      <Editor {...{ title, setTitle, subtitle, setSubtitle, text, setText }} />
+      <Preview {...{ title, subtitle, text, font }} />
+      <Editor {...{ title, setTitle, subtitle, setSubtitle, text, setText, font, setFont }} />
     </main>
   );
 }
